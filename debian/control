@@ -1,0 +1,20 @@
+Source: simplelogin
+Section: kde
+Priority: optional
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+XSBC-Original-Maintainer: Boudewijn Rempt <boud@kde.org>
+Build-Depends: cmake (>= 2.6.3),
+               debhelper (>= 9),
+               libpam0g-dev,
+               pkg-config,
+               pkg-kde-tools (>= 0.9),
+               qt5-default,
+               qtbase5-private-dev
+Standards-Version: 3.9.6
+
+Package: simplelogin
+Architecture: any
+Depends: libpam-runtime, ${misc:Depends}, ${shlibs:Depends}
+Homepage: http://quickgit.kde.org/?p=scratch%2Fdavidedmundson%2Fsimplelogin.git
+Description: Simple Login
+ A trivial login manager without UI useful on embedded devices.
